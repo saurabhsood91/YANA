@@ -1,0 +1,280 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+		<title>App for NGO</title> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+		<script type="text/javascript" charset="utf-8" src="js/cordova-1.8.0.js"></script>	    	
+		<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+		<!--<script src="custom.js"></script>-->	
+		<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script> 
+		<script type = "text/javascript">
+	
+		</script>
+	</head> 
+	
+	<body> 
+		<div data-role="page" id="current">
+			
+			<!--/Header-->
+			<div data-role="header" data-position="fixed" >
+				<h1>YANA</h1>
+			</div>
+			
+			<div data-role="footer" data-position="fixed" >
+		      <h1>Have a Happy Donations</h1>
+		    </div>
+			<br />
+			
+			<!--/Content-->
+			
+		    <div data-role="content">
+		    	<a data-role="button" href = "#ngopage" data-icon = "star" data-iconpos="right" >Donate</a>
+	        	<a href="#acceptpage" data-role="button" data-icon = "star" data-iconpos="right" data-transition = "fade">Accept a Donation</a>
+	     		<div data-role="controlgroup" data-type="horizontal">
+	     			<center><a href="#" data-role="button">Log Out</a>
+	     				<a href="#newuser" data-role="button">New User</a></center>
+	     		</div>     
+	        	<div id="myuser">
+	        		
+	        		
+	        	</div>
+	        </div>	
+	        			
+	        </div> 
+	        
+	        <div data-role = "page" id = "ngopage">
+	        <div data-role="header" data-position="fixed" >
+				<h1>YANA</h1>
+			</div>
+        	<div data-role = "content" id = "ngppage">
+        		
+        		<center><img src="img/ngo.gif" width="250px"></img></center>
+        		<div id="myngo">
+        			<ul data-role = "listview">
+        				<li>
+        					<img src="img/a.jpg"></img>
+        					<h2>Butterfly ChildRights</h2>
+        					<p>#children, #relief, #childrights</p>
+        					<ul>
+        						<div data-role="header" data-position="fixed" >
+									<h1>Contact Info</h1>
+								</div>
+        						<li>Address:- U 4, Green Park Ext.</li>
+        						<li>Phone:- 011 26163935</li>
+        						<center><a href="#donatepage" data-role="button">Start Donating</a></center>
+        					</ul>
+        				</li>
+        				<li>
+        					<img src="img/b.jpg"></img>
+        					<h2>Smile Foundation</h2>
+        					<p>#humanity, #childrights</p>
+        					<ul>
+        						<div data-role="header" data-position="fixed" >
+									<h1>Contact Info</h1>
+								</div>
+							<li>Address:- V-11, Level - 1, Green Park Extension, New </li>
+        					<li>Phone:- 011 4312 3700</li>
+        					<center><a href="#donatepage" data-role="button">Start Donating</a></center>
+        					</ul>
+        				</li>
+        				<li>
+        					<img src="img/c.jpg"></img>
+        					<h2>Helpage India</h2>
+        					<p>#oldage, #oldagehomes, #awareness</p>
+        				<ul>
+        					<div data-role="header" data-position="fixed" >
+									<h1>Contact Info</h1>
+								</div>
+        					<li>Address:- C-14, Qutab Institutional Area</li>
+        					<li>Phone:- 011 4203 0400</li>
+        					<center><a href="#donatepage" data-role="button">Start Donating</a></center>
+        				</ul>
+        				</li>
+        				<li>
+        					<img src="img/d.jpg"></img>
+        					<h2>Pahel</h2>
+        					<p>#education, #health, #social-activities</p>
+        					<ul>
+        						<div data-role="header" data-position="fixed" >
+									<h1>Contact Info</h1>
+								</div>
+        						<li>Address:- FX Uth Cafe JMI Friends Colony</li>
+        						<li>Phone:- 09810209649</li>
+        						<center><a href="#donatepage" data-role="button">Start Donating</a></center>
+        					</ul>
+        				</li>
+        				<li>
+        					<img src="img/e.jpg"></img>
+        					<h2>Swechha/ Green the Gap</h2>
+        					<p>#environmental, #social</p>
+        					<ul>
+        						<div data-role="header" data-position="fixed" >
+									<h1>Contact Info</h1>
+								</div>
+        					<li>Address:- Malviya Nagar</li>
+        					<li>Phone:- 011 2667 1758</li>
+        					<center><a href="#donatepage" data-role="button">Start Donating</a></center>
+        					</ul>
+        				</li>
+        				
+        			</ul>
+        		</div>
+        	</div>
+        	
+	        </div>
+	        
+			<div data-role = "page" id = "newuser">
+			<div data-role="header" data-position="fixed" >
+				<h1>YANA</h1>
+			</div>
+			<div data-role = "content">
+				<form method = "get" action="#">
+					<label for = "myname">Name:</label>
+					<input type = "text" data-role = "text" name = "myname" id = "myname" />
+					<label for = "myaddress">Address:</label>
+					<textarea name = "myaddress"></textarea>
+					<label for = "myemail">Email Address:</label>
+					<input type = "email" data-role = "email" id = "myemail" name = "myemail" />
+					<label for = "pwd">Password: </label>
+					<input type = "password" data-role = "password" id = "pwd" name = "pwd" /><br />
+					<div data-role="controlgroup" data-type="horizontal">
+					<center>
+					<a href = "index.html" data-role = "button">Back</a>
+					<a data-role = "button" onclick = "alert('New User Added');">Create User</a><br />
+					</center>
+					</div>
+					<center><b>Sign in with</b></center><br />
+					<div data-role="controlgroup" data-type="horizontal">
+	     			<center><a href="#" data-role="button">FB</a>
+	     			<a href="#" data-role="button">Twitter</a>
+	     				<a href="#" data-role="button">Google</a></center>
+	     		</div>
+				</form>
+			</div>
+			
+			</div>
+
+			<div data-role = "page" id = "donatepage">
+				<div data-role = "header" data-position = "fixed">
+					<h1>YANA</h1>
+				</div>
+				<div data-role = "content">
+					<form method = "post" action = "#">
+						<label for = "uname">Name</label>
+						<input type = "text" data-role = "text" name = "uname" id = "uname" />
+						<label for = "uaddress">Address</label>
+						<textarea data-role = "textarea" id = "uaddress" name = "textarea"></textarea>
+						<label for ="uphone">Phone Number</label>
+						<input type = "text" name = "uphone" id = "uphone" data-role = "text"/>
+						<label for = "desc">Description</label>
+						<textarea id = "desc" name = "desc" data-role = "textarea"></textarea>
+						<br />
+						<label for = "tdate">Date</label>
+						<input type = "date" id = "tdate" />
+						<label for = "ttime">Time</label>
+						<input type = "date" id = "ttime" /><br />
+						<center>
+							<div data-role="controlgroup" data-type="horizontal">
+							<a data-rel = "popup" data-role = "button" onclick = "alert(' Successfully made Donation ');">Submit</a>
+							
+							<a href = "#lastdonation" data-role = "button">Last Donations</a>
+							</center>
+							</div>
+					</form>
+				</div>
+			
+			</div>		
+			
+			<div data-role = "page" id = "lastdonation">
+	        <div data-role="header" data-position="fixed" >
+				<h1>YANA</h1>
+			</div>
+        	<div data-role = "content" id = "lastdonation">
+        		
+        		<center><img src="img/donate.gif" width="250px"></img></center>
+        		<div id="myngo">
+        			<ul data-role = "listview">
+        				<li>
+        					<img src="img/sish.jpg"></img>
+        					<h2>Shishu Vidya Niketan</h2>
+        					<p>#clothes, #books</p>
+        					
+        				</li>
+        				<div data-role="controlgroup" data-type="horizontal">
+        				<center>
+						<a href = "#ngopage" data-role = "button">Make Another Donation</a></center>
+						</div>
+        							
+        			</ul>
+        		</div>
+        	</div>
+        	
+	        </div>
+	        
+	        <div data-role = "page" id = "acceptpage">
+	        	<div data-role = "header">
+	        		<h2>YANA</h2>
+	        	</div>
+	        	<div data-role = "content">
+	        		<a data-role="button" href="#viewInfo">View Donor Information</a>
+	        		<a data-role="button" href="#recentDonations">Last Donations Made</a>
+	        	</div>
+	        </div>
+	        
+			<div data-role="page" id="viewInfo">
+				<div data-role = "header">
+					<h2>YANA</h2>
+				</div>
+						<label><b>Name:</b></label>
+						<label>Saurabh Sood</label><br />
+						<label><b>Address:</b></label><br />
+						<label>Flat Number:273<br>Geen Lanes<br />Greater Noida</br></label><br />
+						<label><b>Phone Number:</b></label>
+						<label>9123445901</label><br />
+						<label><b>Description:</b></label><br />
+						<label>Clothes, Books</label>
+                        <hr/>
+						<label><b>Name:</b></label>
+						<label>Nitesh Narayan Lal</label><br />
+						<label><b>Address:</b></label><br />
+						<label>Flat Number:290<br>Sector PI</br />Gurgaon</br></label><br />
+						<label><b>Phone Number:</b></label>
+						<label>9121234450</label><br />
+						<label><b>Description:</b></label><br />
+						<label>Money</label>
+
+			
+			</div>
+			
+		<div data-role="page" id ="recentDonations">
+			
+			<div data-role = "header">
+				<h2>YANA</h2>
+			</div>
+			
+			<div data-role = "content">
+				<form method = "post" action = "#">
+				<label for = "donatedorg"><b>Donated Organisation:</b></label>
+				<input type = "text" data-role = "text" id ="donatedorg" name = "donatedorg" />
+				<label for = "donatedby"><b>Donated By:</b></label>
+				<input type = "text" data-role = "text" id ="donatedby" name = "donatedby" />
+				<div data-role = "controlgroup" data-type = "horizontal">
+				<center><a data-role = "button" onclick = "alert('Donation Added');">Submit</a>
+				<a href = "#acceptpage" data-role = "button">Back</a></center>
+				</div>
+				</form>
+			</div>
+			
+			
+			
+			
+		</div>
+		
+		<!------------------------------------------ Page Ends -------------------------- -->
+		 
+		
+		<!------------------------------------------ New Page --------------------------- -->
+	
+	</body>
+</html>
